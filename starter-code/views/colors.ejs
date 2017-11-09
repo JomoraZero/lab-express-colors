@@ -1,0 +1,17 @@
+<h2> Colors </h2>
+
+<div class="container">
+  <div class="row">
+
+    <ul>
+      <%colors.forEach((oneColor) => {%>
+        <li class="col-md-3">
+          <div class="color" style="background-color: <%= oneColor.hex%>"></div>
+          <p class="name"><%=oneColor.keyword%></p>
+          <p><%=oneColor.hex%></p>
+        </li>
+      <%});%>
+    </ul>
+
+  </div>
+</div>
